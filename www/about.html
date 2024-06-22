@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Coding (mostly) in Python for empirical research in finance">
 
-<title>Vincent Codes Finance</title>
+<title>Vincent Codes Finance - About VCF</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,14 +31,11 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./favicon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/cookie-consent/cookie-consent.js"></script>
 <link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
@@ -74,35 +70,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-subtitle','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-XG6JSNQZJK"></script>
 
 <script type="text/plain" cookie-consent="tracking">
@@ -131,50 +98,23 @@ cookieconsent.run({
 </script> 
   
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="alternate" type="application/rss+xml" title="Vincent Codes Finance" href="index.xml" data-external="1"><meta property="og:title" content="Vincent Codes Finance">
-<meta property="og:description" content="Coding (mostly) in Python for empirical research in finance">
+<meta property="og:title" content="Vincent Codes Finance - About VCF">
+<meta property="og:description" content="A blog about coding (mostly) in Python for empirical research in finance">
+<meta property="og:image" content="https://vincent.codes.finance/vcf-logo.webp">
 <meta property="og:site_name" content="Vincent Codes Finance">
 <meta property="og:locale" content="en_US">
-<meta name="twitter:title" content="Vincent Codes Finance">
-<meta name="twitter:description" content="Coding (mostly) in Python for empirical research in finance">
-<meta name="twitter:card" content="summary">
-<link rel="canonical" href="https://vincent.codes.finance/" />
+<meta name="twitter:title" content="Vincent Codes Finance - About VCF">
+<meta name="twitter:description" content="A blog about coding (mostly) in Python for empirical research in finance">
+<meta name="twitter:image" content="https://vincent.codes.finance/vcf-logo.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://vincent.codes.finance/about.html" />
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -207,7 +147,7 @@ window.Quarto = {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link active" href="./about.html" aria-current="page"> 
 <span class="menu-text">About VCF</span></a>
   </li>  
   <li class="nav-item compact">
@@ -249,28 +189,7 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Vincent Codes Finance</h1>
-                  <div>
-        <div class="description">
-          Coding (mostly) in Python for empirical research in finance
-        </div>
-      </div>
-                </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page-left">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
@@ -361,564 +280,126 @@ window.Quarto = {
 <div style="padding: 15px 0px"><script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="codesfinance" data-color="#FFDD00" data-emoji="☕" data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff"></script></div>
 
 </div></div>
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(15)</span></div><div class="category" data-category="AI">AI <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Bert">Bert <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Copilot">Copilot <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Econometrics">Econometrics <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Git/GitHub">Git/GitHub <span class="quarto-category-count">(1)</span></div><div class="category" data-category="LLM">LLM <span class="quarto-category-count">(4)</span></div><div class="category" data-category="LaTeX">LaTeX <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Local AI">Local AI <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Machine Learning">Machine Learning <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Pandas">Pandas <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Python">Python <span class="quarto-category-count">(10)</span></div><div class="category" data-category="Reproducibility">Reproducibility <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Scraping">Scraping <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Sentiment">Sentiment <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Tutorial">Tutorial <span class="quarto-category-count">(4)</span></div><div class="category" data-category="VS Code">VS Code <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Visual Studio Code">Visual Studio Code <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Writing">Writing <span class="quarto-category-count">(2)</span></div></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#about-vincent-codes-finance" id="toc-about-vincent-codes-finance" class="nav-link active" data-scroll-target="#about-vincent-codes-finance">About Vincent Codes Finance</a></li>
+  <li><a href="#contact" id="toc-contact" class="nav-link" data-scroll-target="#contact">✉️ Contact</a></li>
+  <li><a href="#about-vincent" id="toc-about-vincent" class="nav-link" data-scroll-target="#about-vincent">👨‍🏫 About Vincent</a></li>
+  <li><a href="#how-to-support-me" id="toc-how-to-support-me" class="nav-link" data-scroll-target="#how-to-support-me">❤️ How to support me</a></li>
+  <li><a href="#license-and-reuse" id="toc-license-and-reuse" class="nav-link" data-scroll-target="#license-and-reuse">🔓 License and reuse</a></li>
+  <li><a href="#how-is-this-blog-built" id="toc-how-is-this-blog-built" class="nav-link" data-scroll-target="#how-is-this-blog-built">🛠️ How is this blog built?</a></li>
+  <li><a href="#disclaimer" id="toc-disclaimer" class="nav-link" data-scroll-target="#disclaimer">📝 Disclaimer</a></li>
+  <li><a href="#use-of-ai" id="toc-use-of-ai" class="nav-link" data-scroll-target="#use-of-ai">🤖 Use of AI</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 
 
 
+<div class="quarto-about-trestles content">
+  <div class="about-entity">
+    <img src="vcf-logo.webp" class="about-image
+  rounded " style="width: 20em;">
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">About VCF</h1>
+</div>
+<div class="quarto-title-meta">
+  </div>
+</header>
+    <div class="about-links">
+  <a href="https://www.youtube.com/channel/UCuNrwdpvF1LBGJ2cNL5b68w" class="about-link" rel="" target="">
+    <i class="bi bi-youtube"></i>
+     <span class="about-link-text">YouTube</span>
+  </a>
+  <a href="https://github.com/Vincent-Codes-Finance" class="about-link" rel="" target="">
+    <i class="bi bi-github"></i>
+     <span class="about-link-text"></span>
+  </a>
+  <a href="https://twitter.com/CodesFinance" class="about-link" rel="" target="">
+    <i class="bi bi-twitter-x"></i>
+     <span class="about-link-text"></span>
+  </a>
+  <a href="https://www.threads.net/@codesfinance" class="about-link" rel="" target="">
+    <i class="bi bi-threads"></i>
+     <span class="about-link-text"></span>
+  </a>
+  <a href="https://www.linkedin.com/company/vincent-codes-finance/" class="about-link" rel="" target="">
+    <i class="bi bi-linkedin"></i>
+     <span class="about-link-text"></span>
+  </a>
+</div>
+  </div>
+  <div class="about-contents"><div id="hero-heading">
+<section id="about-vincent-codes-finance" class="level2">
+<h2 data-anchor-id="about-vincent-codes-finance">About Vincent Codes Finance</h2>
+<p><em>VCF</em> is a blog dedicated to coding in Python for empirical research in finance with a companion YouTube channel. My goal is to provide a platform for sharing knowledge and resources about coding in finance. The content is aimed at students, academics, and finance professionals who want to learn more about coding and empirical finance research.</p>
+<p>I use this platform to complement my teaching material and make it available to a wider audience. I also use it to share my experience with coding in finance and to document my journey as I learn new things.</p>
+</section>
+</div></div>
+</div>
+
+<section id="contact" class="level2">
+<h2 data-anchor-id="contact">✉️ Contact</h2>
+<p>For any comments and inquiries about this blog or the YouTube Channel, please contact me at:</p>
+<p><strong>EMAIL</strong>: <a href="mailto:vincent@codes.finance">vincent@codes.finance</a></p>
+</section>
+<section id="about-vincent" class="level2">
+<h2 data-anchor-id="about-vincent">👨‍🏫 About Vincent</h2>
+<div class="columns">
+<div class="column" style="width:75%;">
+<p>Hello, my name is Vincent Grégoire. I’m an Associate Professor of Finance at <a href="https://www.hec.ca/">HEC Montréal</a> where I have been teaching <em>Empirical Finance</em> at the Master’s for a couple of years. My research interests include information economics and everything at the intersection of finance and technology, such as market microstructure, big data and machine learning applications in finance, fintech, and cybersecurity in finance. I’m also a Python enthusiast and curious about anything related to coding, data science, and machine learning.</p>
+</div><div class="column" data-align="right" style="width:25%;">
+<div class="quarto-figure quarto-figure-right">
+<figure class="figure">
+<p><img src="profile.jpg" class="img-fluid quarto-figure quarto-figure-right figure-img" width="150"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>My academic journey led me from undergraduate and master’s degrees in Computer Engineering to a Master’s in Financial Engineering at <a href="https://www.ulaval.ca/">Université Laval</a> and a Ph.D.&nbsp;in Finance from the <a href="https://www.sauder.ubc.ca/thought-leadership/divisions/finance">University of British Columbia</a>.</p>
+<p>See my <a href="https://www.vincentgregoire.com">academic page</a> for more details.</p>
+</section>
+<section id="how-to-support-me" class="level2">
+<h2 data-anchor-id="how-to-support-me">❤️ How to support me</h2>
+<p>If you find the content on this website useful and would like to support me, there are a few ways you can do so:</p>
+<ol type="1">
+<li>Spread the word about this website and the YouTube channel!</li>
+<li>Subscribe to the <a href="https://www.youtube.com/channel/UCuNrwdpvF1LBGJ2cNL5b68w">YouTube channel</a></li>
+<li><a href="https://buymeacoffee.com/codesfinance">Buy me a coffee</a></li>
+</ol>
+<p>I am committed to transparency about any potential monetization of this website and the YouTube channel. I may use affiliate links related to products or services. If you click on an affiliate link and make a purchase, I may receive a commission at no extra cost to you. There will always be a disclosure when an affiliate link is used. I’m also trialing ads on the website, but I’m committed to keeping them as unobtrusive as possible.</p>
+</section>
+<section id="license-and-reuse" class="level2">
+<h2 data-anchor-id="license-and-reuse">🔓 License and reuse</h2>
+<p>All content on this website is licensed under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. You are free to share and adapt the material for non-commercial purposes as long as you give appropriate credit and distribute your contributions under the same license.</p>
+<p>If you want to reuse any of the content on this website for teaching purposes, please feel free to do so. I would appreciate it if you could include a link to this website in your course material and let me know by sending me an email at <a href="mailto:vincent@codes.finance">vincent@codes.finance</a>. I will be happy to provide you with the source files for any of the content on this website upon request.</p>
+<p>If for any reason you would like to reuse any of the content on this website for a purpose that is not covered by the above license, please contact me at <a href="mailto:vincent@codes.finance">vincent@codes.finance</a>.</p>
+<p>The code examples on this website are available on <a href="https://github.com/Vincent-Codes-Finance">GitHub</a> under the <a href="https://opensource.org/licenses/MIT">MIT License</a>. You are free to use the code for any purpose, including commercial purposes, as long as you give appropriate credit and include a copy of the license in your distribution.</p>
+</section>
+<section id="how-is-this-blog-built" class="level2">
+<h2 data-anchor-id="how-is-this-blog-built">🛠️ How is this blog built?</h2>
+<p>This website is built using <a href="https://quarto.org/">Quarto</a>, an open-source document system that allows you to write content in Markdown or Jupyter Notebooks and publish it in a variety of formats, including static HTML files. Quarto is on my list of topics to cover in the future, so stay tuned for content on that topic.</p>
+<p>The blog is currently hosted using <a href="https://pages.github.com/">GitHub Pages</a>.</p>
+</section>
+<section id="disclaimer" class="level2">
+<h2 data-anchor-id="disclaimer">📝 Disclaimer</h2>
+<p>While I make every effort to ensure that the content on this website is accurate and up-to-date, I cannot guarantee that it is free from errors or omissions. The content is provided for informational purposes only and should not be construed as financial, legal, or professional advice. You should always consult with a qualified professional before making any financial or investment decisions.</p>
+</section>
+<section id="use-of-ai" class="level2">
+<h2 data-anchor-id="use-of-ai">🤖 Use of AI</h2>
+<p>While I make use of AI-powered tools for editing and proofreading, I am committed to ensuring that all content is original and accurate. I will always cite my sources and give credit where credit is due.</p>
 
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Visual Studio Code,Reproducibility,Tutorial" data-listing-date-sort="1718337600000" data-listing-file-modified-sort="1718379207213" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2064">
-<div class="thumbnail">
-<p><a href="./posts/devcontainers/index.html" class="no-external"></a></p><a href="./posts/devcontainers/index.html" class="no-external">
-<p><img src="./posts/devcontainers/containers.webp" class="thumbnail-image"></p>
-</a><p><a href="./posts/devcontainers/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/devcontainers/index.html" class="no-external">Use Devcontainers for safe and replicable research</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/devcontainers/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Visual Studio Code'); return false;">
-Visual Studio Code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Reproducibility'); return false;">
-Reproducibility
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Tutorial'); return false;">
-Tutorial
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/devcontainers/index.html" class="no-external">In empirical finance research, the tools and methodologies we employ play a crucial role in ensuring the integrity and reproducibility of our findings. One such powerful…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/devcontainers/index.html" class="no-external">
-<div class="listing-date">
-Jun 14, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="VS Code,Copilot,Local AI,LLM,Python,Machine Learning,AI,Writing" data-listing-date-sort="1716177600000" data-listing-file-modified-sort="1716902048491" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="17" data-listing-word-count-sort="3378">
-<div class="thumbnail">
-<p><a href="./posts/ollama-copilot/index.html" class="no-external"></a></p><a href="./posts/ollama-copilot/index.html" class="no-external">
-<p><img src="./posts/ollama-copilot/ollama-copilot.webp" class="thumbnail-image"></p>
-</a><p><a href="./posts/ollama-copilot/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/ollama-copilot/index.html" class="no-external">Using Ollama with Continue as an AI-Powered Coding and Writing Assistant</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/ollama-copilot/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('VS Code'); return false;">
-VS Code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Copilot'); return false;">
-Copilot
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Local AI'); return false;">
-Local AI
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('LLM'); return false;">
-LLM
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Python'); return false;">
-Python
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Machine Learning'); return false;">
-Machine Learning
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('AI'); return false;">
-AI
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Writing'); return false;">
-Writing
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/ollama-copilot/index.html" class="no-external">GitHub Copilot is an amazing AI-assistant that helps developers write code faster and with fewer errors. However, it does have some limitations, such as the need for an…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/ollama-copilot/index.html" class="no-external">
-<div class="listing-date">
-May 20, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="Python,Sentiment,Bert,LLM,Machine Learning,AI" data-listing-date-sort="1712894400000" data-listing-file-modified-sort="1716902006693" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1727">
-<div class="thumbnail">
-<p><a href="./posts/sentiment/index.html" class="no-external"></a></p><a href="./posts/sentiment/index.html" class="no-external">
-<p><img src="./posts/sentiment/sentiment.webp" class="thumbnail-image"></p>
-</a><p><a href="./posts/sentiment/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/sentiment/index.html" class="no-external">Financial news sentiment analysis in Python</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/sentiment/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Python'); return false;">
-Python
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Sentiment'); return false;">
-Sentiment
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Bert'); return false;">
-Bert
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('LLM'); return false;">
-LLM
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Machine Learning'); return false;">
-Machine Learning
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('AI'); return false;">
-AI
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/sentiment/index.html" class="no-external">In the dynamic world of finance, understanding market sentiment is crucial for researchers and practitioners alike.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/sentiment/index.html" class="no-external">
-<div class="listing-date">
-Apr 12, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="Python,Scraping" data-listing-date-sort="1712376000000" data-listing-file-modified-sort="1716901770244" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2286">
-<div class="thumbnail">
-<p><a href="./posts/edgartools/index.html" class="no-external"></a></p><a href="./posts/edgartools/index.html" class="no-external">
-<p><img src="./posts/edgartools/edgartools.webp" class="thumbnail-image"></p>
-</a><p><a href="./posts/edgartools/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/edgartools/index.html" class="no-external">Scrape financial data from SEC Edgar with Python and edgartools</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/edgartools/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Python'); return false;">
-Python
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Scraping'); return false;">
-Scraping
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/edgartools/index.html" class="no-external">In the ever-evolving field of finance, the application of machine learning, especially text analysis, has become increasingly popular. Researchers are constantly seeking out…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/edgartools/index.html" class="no-external">
-<div class="listing-date">
-Apr 6, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="Local AI,LLM,Python,Machine Learning,AI" data-listing-date-sort="1711771200000" data-listing-file-modified-sort="1716901742092" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="24" data-listing-word-count-sort="4766">
-<div class="thumbnail">
-<p><a href="./posts/documents-llm/index.html" class="no-external"></a></p><a href="./posts/documents-llm/index.html" class="no-external">
-<p><img src="./posts/documents-llm/documents.webp" class="thumbnail-image"></p>
-</a><p><a href="./posts/documents-llm/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/documents-llm/index.html" class="no-external">Summarize and query PDFs with AI using Ollama</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/documents-llm/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Local AI'); return false;">
-Local AI
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('LLM'); return false;">
-LLM
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Python'); return false;">
-Python
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Machine Learning'); return false;">
-Machine Learning
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('AI'); return false;">
-AI
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/documents-llm/index.html" class="no-external">Large language models (LLMs) have revolutionized the way we interact with text data, enabling us to generate, summarize, and query information with unprecedented accuracy…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/documents-llm/index.html" class="no-external">
-<div class="listing-date">
-Mar 30, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="Python" data-listing-date-sort="1711080000000" data-listing-file-modified-sort="1716902160851" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="17" data-listing-word-count-sort="3211">
-<div class="thumbnail">
-<p><a href="./posts/apple-mlx/index.html" class="no-external"></a></p><a href="./posts/apple-mlx/index.html" class="no-external">
-<p><img src="./posts/apple-mlx/apple-gears.webp" class="thumbnail-image"></p>
-</a><p><a href="./posts/apple-mlx/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/apple-mlx/index.html" class="no-external">Speed up your scientific computing workflows with MLX</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/apple-mlx/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Python'); return false;">
-Python
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/apple-mlx/index.html" class="no-external">The rapidly evolving landscape in machine learning (ML) tools and libraries sometimes offer positive spillovers for scientific computing and empirical finance research. One…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/apple-mlx/index.html" class="no-external">
-<div class="listing-date">
-Mar 22, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-categories="Local AI,LLM,Machine Learning,AI" data-listing-date-sort="1709874000000" data-listing-file-modified-sort="1716901906083" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2653">
-<div class="thumbnail">
-<p><a href="./posts/ollama-chatgpt/index.html" class="no-external"></a></p><a href="./posts/ollama-chatgpt/index.html" class="no-external">
-<p><img src="./posts/ollama-chatgpt/futuristic_llama.webp" class="thumbnail-image"></p>
-</a><p><a href="./posts/ollama-chatgpt/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/ollama-chatgpt/index.html" class="no-external">Using Ollama as a ChatGPT Replacement</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/ollama-chatgpt/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Local AI'); return false;">
-Local AI
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('LLM'); return false;">
-LLM
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Machine Learning'); return false;">
-Machine Learning
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('AI'); return false;">
-AI
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/ollama-chatgpt/index.html" class="no-external">Local Large Language Models (LLMs) like Ollama offer a powerful alternative to cloud-based solutions like ChatGPT. In this post, explore the benefits of using Ollama as a…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/ollama-chatgpt/index.html" class="no-external">
-<div class="listing-date">
-Mar 8, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-categories="Python,Pandas" data-listing-date-sort="1709269200000" data-listing-file-modified-sort="1716901957604" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1992">
-<div class="thumbnail">
-<p><a href="./posts/pandas-read-csv/index.html" class="no-external"></a></p><a href="./posts/pandas-read-csv/index.html" class="no-external">
-<p><img src="./posts/pandas-read-csv/pandas-arrow.webp" class="thumbnail-image"></p>
-</a><p><a href="./posts/pandas-read-csv/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/pandas-read-csv/index.html" class="no-external">Efficient reading and parsing of large CSV files in Python with Pandas and Arrow</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/pandas-read-csv/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Python'); return false;">
-Python
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Pandas'); return false;">
-Pandas
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/pandas-read-csv/index.html" class="no-external">CSV files are ubiquitous in empirical finance and data science more generally. They are easy to create and read and are supported by most data processing tools. The <code>pandas.re…</code></a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/pandas-read-csv/index.html" class="no-external">
-<div class="listing-date">
-Mar 1, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="8" data-categories="VS Code,LaTeX,Writing" data-listing-date-sort="1708232400000" data-listing-file-modified-sort="1714400458375" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="15" data-listing-word-count-sort="2979">
-<div class="thumbnail">
-<p><a href="./posts/vscode-latex/index.html" class="no-external"></a></p><a href="./posts/vscode-latex/index.html" class="no-external">
-<p><img src="./posts/vscode-latex/vscode-latex.webp" class="thumbnail-image"></p>
-</a><p><a href="./posts/vscode-latex/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/vscode-latex/index.html" class="no-external">Writing LaTeX Documents in VS Code</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/vscode-latex/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('VS Code'); return false;">
-VS Code
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('LaTeX'); return false;">
-LaTeX
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Writing'); return false;">
-Writing
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/vscode-latex/index.html" class="no-external">LaTeX is a powerful typesetting system that is widely used for producing scientific publications and academic papers. Visual Studio Code is a versatile and extensible code…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/vscode-latex/index.html" class="no-external">
-<div class="listing-date">
-Feb 18, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="9" data-categories="Git/GitHub,Reproducibility,Tutorial" data-listing-date-sort="1707454800000" data-listing-file-modified-sort="1716902226545" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="35" data-listing-word-count-sort="6976">
-<div class="thumbnail">
-<p><a href="./posts/github-for-research/index.html" class="no-external"></a></p><a href="./posts/github-for-research/index.html" class="no-external">
-<p><img src="./posts/github-for-research/github-for-research.webp" class="thumbnail-image"></p>
-</a><p><a href="./posts/github-for-research/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/github-for-research/index.html" class="no-external">Using GitHub for academic research</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/github-for-research/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Git/GitHub'); return false;">
-Git/GitHub
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Reproducibility'); return false;">
-Reproducibility
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Tutorial'); return false;">
-Tutorial
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/github-for-research/index.html" class="no-external">Git and GitHub are powerful version control tools for managing your research projects and collaborating with others while keeping a detailed record of your work. In this…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/github-for-research/index.html" class="no-external">
-<div class="listing-date">
-Feb 9, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="10" data-categories="Python,Econometrics" data-listing-date-sort="1706677200000" data-listing-file-modified-sort="1716902017398" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1697">
-<div class="thumbnail">
-<p><a href="./posts/timeseries-standard-errors/index.html" class="no-external"></a></p><a href="./posts/timeseries-standard-errors/index.html" class="no-external">
-<p><img src="./posts/timeseries-standard-errors/spy_ts.webp" class="thumbnail-image"></p>
-</a><p><a href="./posts/timeseries-standard-errors/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/timeseries-standard-errors/index.html" class="no-external">Estimating standard errors in time series data with Python and statsmodels</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/timeseries-standard-errors/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Python'); return false;">
-Python
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Econometrics'); return false;">
-Econometrics
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/timeseries-standard-errors/index.html" class="no-external">In this post, I show how to estimate standard errors in OLS regressions of time series data with Python and the statsmodels library.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/timeseries-standard-errors/index.html" class="no-external">
-<div class="listing-date">
-Jan 31, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="11" data-categories="Python,Econometrics" data-listing-date-sort="1705813200000" data-listing-file-modified-sort="1716901970726" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="33" data-listing-word-count-sort="6433">
-<div class="thumbnail">
-<p><a href="./posts/panel-ols-standard-errors/index.html" class="no-external"></a></p><a href="./posts/panel-ols-standard-errors/index.html" class="no-external">
-<p><img src="./posts/panel-ols-standard-errors/panel-data.webp" class="thumbnail-image"></p>
-</a><p><a href="./posts/panel-ols-standard-errors/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/panel-ols-standard-errors/index.html" class="no-external">Estimating standard errors in panel data with Python and linearmodels</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/panel-ols-standard-errors/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Python'); return false;">
-Python
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Econometrics'); return false;">
-Econometrics
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/panel-ols-standard-errors/index.html" class="no-external">In this post, I show how to estimate standard errors in panel data with Python and the linearmodels library.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/panel-ols-standard-errors/index.html" class="no-external">
-<div class="listing-date">
-Jan 21, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="12" data-categories="Python,Tutorial" data-listing-date-sort="1704603600000" data-listing-file-modified-sort="1716901983178" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="149">
-<div class="thumbnail">
-<p><a href="./posts/python-basics-tutorial/index.html" class="no-external"></a></p><a href="./posts/python-basics-tutorial/index.html" class="no-external">
-<p><img src="./posts/python-basics-tutorial/python-code.webp" class="thumbnail-image"></p>
-</a><p><a href="./posts/python-basics-tutorial/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/python-basics-tutorial/index.html" class="no-external">Python basic tutorial</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/python-basics-tutorial/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Python'); return false;">
-Python
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Tutorial'); return false;">
-Tutorial
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/python-basics-tutorial/index.html" class="no-external">I posted a tutorial on the basics of the Python syntax. This tutorial has been updated for Python 3.12, and covers the basics of the Python syntax. It is intended for…<code></code><code></code><code></code></a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/python-basics-tutorial/index.html" class="no-external">
-<div class="listing-date">
-Jan 7, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="13" data-categories="Python,Tutorial" data-listing-date-sort="1704258000000" data-listing-file-modified-sort="1716901810385" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="17" data-listing-word-count-sort="3300">
-<div class="thumbnail">
-<p><a href="./posts/install-python-312/index.html" class="no-external"></a></p><a href="./posts/install-python-312/index.html" class="no-external">
-<p><img src="./posts/install-python-312/install-py.webp" class="thumbnail-image"></p>
-</a><p><a href="./posts/install-python-312/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/install-python-312/index.html" class="no-external">Installing Python 3.12</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/install-python-312/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Python'); return false;">
-Python
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Tutorial'); return false;">
-Tutorial
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/install-python-312/index.html" class="no-external">In this short tutorial, I cover installing Python 3.12 and the related tools for a complete coding environment.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/install-python-312/index.html" class="no-external">
-<div class="listing-date">
-Jan 3, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="14" data-listing-date-sort="1704085200000" data-listing-file-modified-sort="1716902189123" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="596">
-<div class="thumbnail">
-<p><a href="./posts/welcome/index.html" class="no-external"></a></p><a href="./posts/welcome/index.html" class="no-external">
-<p><img src="./posts/welcome/new-blog.webp" class="thumbnail-image"></p>
-</a><p><a href="./posts/welcome/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/welcome/index.html" class="no-external">New Year, new blog</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/welcome/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/welcome/index.html" class="no-external">Happy New Year and welcome to the first post of <em>Vincent Codes Finance</em>! As we step into a fresh year, I’m thrilled to launch this new blog and companion YouTube channel…</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/welcome/index.html" class="no-external">
-<div class="listing-date">
-Jan 1, 2024
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></div></div></section></div></main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -1083,13 +564,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   } else {
     toggleColorMode(false);
   }
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
