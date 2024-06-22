@@ -1,3 +1,3 @@
-# Codes.finance
+# Vincent Codes Finance
 
-There is currently nothing hosted here. See <https://vincent.codes.finance>.
+This repository contains the hosting for my blog, [vincent.codes.finance](https://vincent.codes.finance).
